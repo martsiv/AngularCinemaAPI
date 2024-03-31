@@ -1,0 +1,20 @@
+<!-- <mat-list role="list">
+    @for (movie of dataSource; track movie.id) {
+        <mat-list-item role="listitem">
+            <app-movie-card [movie_card_model]="movie"></app-movie-card>
+        </mat-list-item>
+    } @empty {
+        <li>Empty movie list</li>
+    }
+</mat-list> -->
+<div class="list-container">
+    <ul>
+        @for (movie of dataSource; track movie.id) {
+            <li>
+                <app-movie-card [movie_card_model]="movie"></app-movie-card>
+            </li>
+        } @empty {
+            <li>Empty movie list</li>
+        }
+    </ul>
+</div>

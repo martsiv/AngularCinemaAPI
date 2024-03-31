@@ -1,0 +1,12 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>{{movie_card_model.original_title}}</mat-card-title>
+      <mat-card-subtitle>{{movie_card_model.release_date}}</mat-card-subtitle>
+      <img mat-card-xl-image [src]="'https://image.tmdb.org/t/p/w185' + movie_card_model.poster_path">
+    </mat-card-title-group>
+  </mat-card-header>
+  <mat-card-content>
+    {{movie_card_model.overview}}
+  </mat-card-content>
+</mat-card>
